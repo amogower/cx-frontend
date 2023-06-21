@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cx/domain": ["libs/domain/src/index.ts"],
+      "@cx/react-utils": ["libs/react-utils/src/index.ts"],
+      "@cx/ui": ["libs/ui/src/index.ts"],
+      "@footer/*": ["apps/footer/*"],
+      "@odds-grid/*": ["apps/odds-grid/*"],
+      "@subevent-header/*": ["apps/subevent-header/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
